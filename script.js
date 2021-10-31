@@ -66,16 +66,6 @@ document.addEventListener("DOMContentLoaded", () => {
     //document.getElementById("kata-uni").innerHTML = `U+${row[2].charCodeAt().toString(16)}`;
     //document.getElementById("pila-uni").innerHTML = `U+${row[4].charCodeAt().toString(16)}`;
 
-    switch (row[0]) {
-      case "ji":
-        document.getElementById("kata").innerHTML = "<img src='https://upload.wikimedia.org/wikipedia/commons/2/2a/Katakana_Yi_1.png'></img>";
-        break;
-      case "vu":
-        document.getElementById("kata").innerHTML = "<img src='https://upload.wikimedia.org/wikipedia/commons/9/98/Katakana_obsolete_wu.svg'></img>";
-        document.getElementById("pila").innerHTML = "<img src='https://upload.wikimedia.org/wikipedia/commons/6/6b/Hiragana_WU_2.png'></img>";
-        break;
-    }
-
     if (row[3] == row[5]) {
       document.getElementById("pila-kanzi").style.display = "none";
       document.getElementById("kata-kanzi").style.gridColumn = "2 / 4";
